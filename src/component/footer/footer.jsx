@@ -21,12 +21,12 @@ export default function Footer() {
         <p className="footer-item-text-md">Registration Contacts</p>
         <div className="footer-item-text-info">
           <p className="footer-item-text-sm">
-            <span style={{ fontWeight: 500 }}>Phone:</span>
+            <span style={{ fontWeight: 400 }}>Phone:</span>
             <br />
             (234) 0908-899-9819
           </p>
           <p className="footer-item-text-sm">
-            <span style={{ fontWeight: 500 }}>Email:</span>
+            <span style={{ fontWeight: 400 }}>Email:</span>
             <br />
             enquiries@financialreportingcouncil.gov.ng
           </p>

@@ -1,0 +1,101 @@
+@use "./color-variables" as colors;
+$font-family-Karla: "karla", "Helvetica Neue", "Helvetica", "Arial", system-ui,
+  sans-serif !default;
+$font-family-monospace: monospace !default;
+// $font-family-base: $font-family-karla;
+$font-family-code: $font-family-monospace;
+$font-size-16: 16px;
+$line-height-24: 24px;
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.heading-1 {
+  color: #263238;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+.heading-2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.heading-3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.display-heading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.section-heading {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.subtitle-1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.subtitle-2 {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+.body-text-1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.05px;
+}
+.body-text-2 {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.line-text {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.caption {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.chart-text {
+  font-size: 0.625rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.action-button {
+  background-color: colors.$green-300;
+  padding: 13px 29px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover {
+  background-color: colors.$green;
+}
+.action-button:active {
+  background-color: colors.$green-300;
+}

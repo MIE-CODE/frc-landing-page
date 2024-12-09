@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 37px;
+  padding: 65px 0px 61px;
+  background-color: #03542e;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-md {
+      font-size: 2.375rem;
+      font-weight: bold;
+      color: #e9f5ef;
+    }
+    &-sm {
+      font-size: 1.375rem;
+      color: #ffffff;
+    }
+  }
+}

@@ -15,10 +15,8 @@
     @media screen and (min-width: 425px) {
       flex-direction: row;
     }
-    @media screen and (min-width: 768px) {
-      padding-left: 100px;
-    }
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 1024px) {
       padding-left: 100px;
     }
     &-md {
@@ -42,7 +40,8 @@
       margin-top: auto;
       margin-right: 10px;
       text-wrap: nowrap;
-      @media screen and (min-width: 768px) {
+
+      @media screen and (min-width: 1024px) {
         margin-right: 120px;
       }
     }
@@ -70,13 +69,15 @@
       }
       @media screen and (min-width: 768px) {
         font-size: 1.5rem;
+      }
+      @media screen and (min-width: 1024px) {
         padding: 47px 112px;
       }
     }
   }
   &-grid {
     padding: 59px 10px 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       padding: 59px 112px 0px;
     }
 
@@ -143,7 +144,7 @@
     @media screen and (min-width: 426px) {
       margin-top: 155px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       padding-left: 100px;
     }
     &-items {
@@ -223,9 +224,8 @@
 
     @media screen and (min-width: 426px) {
       margin: 139px 0px 100px;
-      padding-left: 100px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       padding-left: 100px;
     }
     &-cont {

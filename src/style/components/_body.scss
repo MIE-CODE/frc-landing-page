@@ -91,9 +91,10 @@
         grid-template-columns: repeat(2, minmax(150px, 297px));
       }
       @media screen and (min-width: 768px) {
-        gap: 73px;
+        row-gap: auto;
       }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
+        gap: 73px;
         grid-template-columns: repeat(3, minmax(250px, 297px));
       }
     }

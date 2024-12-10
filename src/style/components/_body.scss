@@ -31,9 +31,11 @@
     }
     &-sm {
       font-size: 1rem;
+      margin-top: 1rem;
       color: #263238;
-      @media screen and (min-width: 425px) {
+      @media screen and (min-width: 426px) {
         font-size: 1.75rem;
+        margin-top: 0px;
       }
     }
     button {
@@ -83,9 +85,13 @@
       grid-template-columns: repeat(1, minmax(100px, 297px));
       margin-top: 60px;
       justify-content: space-between;
-      gap: 73px;
-      @media screen and (min-width: 425px) {
+      gap: 10px;
+      row-gap: 40px;
+      @media screen and (min-width: 375px) {
         grid-template-columns: repeat(2, minmax(150px, 297px));
+      }
+      @media screen and (min-width: 768px) {
+        gap: 73px;
       }
       @media screen and (min-width: 1024px) {
         grid-template-columns: repeat(3, minmax(250px, 297px));
@@ -131,19 +137,23 @@
     }
   }
   &-roadmap {
-    margin-top: 155px;
+    margin-top: 100px;
     padding-left: 10px;
-
+    @media screen and (min-width: 426px) {
+      margin-top: 155px;
+    }
     @media screen and (min-width: 768px) {
       padding-left: 100px;
     }
     &-items {
       position: relative;
       display: grid;
-
       grid-template-columns: repeat(2, auto);
-      margin: 82px 0px 100px;
+      margin: 42px 0px 50px;
       gap: 48px;
+      @media screen and (min-width: 426px) {
+        margin: 82px 0px 100px;
+      }
       @media screen and (min-width: 768px) {
         justify-content: left;
       }
@@ -207,11 +217,14 @@
     }
   }
   &-faq {
-    margin: 139px 0px 100px;
+    margin: 89px 0px 122px;
     padding: 0px 10px;
 
+    @media screen and (min-width: 426px) {
+      margin: 139px 0px 100px;
+      padding-left: 100px;
+    }
     @media screen and (min-width: 768px) {
-      margin: 139px 0px 222px;
       padding-left: 100px;
     }
     &-cont {

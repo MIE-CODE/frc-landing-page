@@ -7,6 +7,8 @@ import faqImage from "../../assets/faq-image.png";
 import user from "../../assets/user.png";
 import notification from "../../assets/bell.png";
 import { Bullet } from "../../svg";
+import Dropdown from "./animation/dropdown";
+
 function Body() {
   return (
     <div className="body">
@@ -174,55 +176,37 @@ function Body() {
         <div className="body-faq-cont">
           <img src={faqImage} alt="fax image" height={321} />
           <div className="body-faq-items">
-            <div className="body-faq-item">
-              <div className="body-faq-item-md">
-                Who needs to file financial statements through this service?
-              </div>
-              <p className="body-faq-item-sm">
-                All entities classified under Public Interest Entities,
-                professional firms, and specific private and public sector
-                organizations must comply with FRC guidelines by submitting
-                their financial documents.
-              </p>
-            </div>
-            <div className="body-faq-item">
-              <div className="body-faq-item-md">
-                What documents are required?
-              </div>
-              <p className="body-faq-item-sm">
-                Typically, entities must submit: Annual Financial Statements
-              </p>
-            </div>
-            <div className="body-faq-item">
-              <div className="body-faq-item-md">
-                How secure is the platform?
-              </div>
-              <p className="body-faq-item-sm">
-                Our platform uses advanced encryption to protect your data. All
+            <Dropdown
+              heading={
+                "   Who needs to file financial statements through this service?"
+              }
+              body=" All entities classified under Public Interest Entities, professional
+        firms, and specific private and public sector organizations must comply
+        with FRC guidelines by submitting their financial documents."
+            />
+
+            <Dropdown
+              heading="What documents are required?"
+              body="   Typically, entities must submit: Annual Financial Statements"
+            />
+            <Dropdown
+              heading="  How secure is the platform?"
+              body=" Our platform uses advanced encryption to protect your data. All
                 submissions are stored securely and accessed only by authorized
-                personnel.
-              </p>
-            </div>
-            <div className="body-faq-item">
-              <div className="body-faq-item-md">
-                What happens after I submit my documents?
-              </div>
-              <p className="body-faq-item-sm">
-                Your submission undergoes a vetting process to ensure compliance
+                personnel."
+            />
+            <Dropdown
+              heading="   What happens after I submit my documents?"
+              body=" Your submission undergoes a vetting process to ensure compliance
                 with FRC standards. You will be notified of the status through
-                email.
-              </p>
-            </div>
-            <div className="body-faq-item">
-              <div className="body-faq-item-md">
-                What happens after I submit my documents?
-              </div>
-              <p className="body-faq-item-sm">
-                In case of rejection, you will receive detailed feedback with
+                email."
+            />
+            <Dropdown
+              heading=" What happens after I submit my documents?"
+              body=" In case of rejection, you will receive detailed feedback with
                 corrective actions. Resubmit the corrected documents to complete
-                the process.
-              </p>
-            </div>
+                the process."
+            />
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 export default function Dropdown({ heading, body }) {
   const [open, setOpen] = useState(false);
@@ -17,9 +18,11 @@ export default function Dropdown({ heading, body }) {
   return (
     <div ref={dropdownRef} className="body-faq-item">
       <div onClick={() => setOpen(!open)} className="body-faq-item-md">
-        {heading}
+        {heading || "HEADER SECTION"}
       </div>
-      <p className={`body-faq-item-sm ${open ? "open" : ""}`}>{body}</p>
+      <p className={`body-faq-item-sm ${open ? "open" : ""}`}>
+        {body || "BODY SECTION"}
+      </p>
     </div>
   );
 }
